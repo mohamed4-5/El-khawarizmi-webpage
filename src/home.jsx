@@ -6,7 +6,7 @@ function Home(){
 
     return(
         <>
-            <div className='grid grid-rows-2 overflow-hidden gap-24 mt-[15%] md:hidden'>
+            <div className='grid grid-rows-2 overflow-hidden gap-20 mt-[15%] md:hidden'>
             <div className='pt-20 flex flex-col justify-center items-center'>
               <img src="/photos/footerlogo.png" className="w-52" alt="logo"></img>
               <p className='pt-4 w-4/5 text-center font-poppins text-lg'>Here we explain everything related to math, from near or far</p>
