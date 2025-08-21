@@ -1,0 +1,66 @@
+[
+    {
+        "id":1,
+        "title":"Mathematics 2",
+        "image":"/photos/math2.jpg",
+        "description":"Mathematics 2 Explanation For the Faculties of Computers, AI and Engineering.",
+        "lectures":[
+            {
+                "title":"Function of several variables solving questions.","link":"https://youtu.be/E67Y5GHL6B4?si=IRsPw8gmqJxIEPal"
+            },
+             {
+                "title":"Conic section", "link":"https://youtu.be/_wzCRBZ8rDo?si=Ak0XtbvRB76efadg"
+            },
+            {
+                "title":"Math 2 lec 2 explanation (partial derivatives, tangent plane, linearization and diffrential)", "link":"https://youtu.be/QG6JI50UanI?si=jq4e1C1jc6gLiu-C"
+            },
+            {
+                "title":"lec3 math2 explanation chain rule, implicit differentiation and local extrema","link":"https://youtu.be/weOVEyymKTk?si=f2R1gBafPKLZlCuI"
+            },
+            {
+                "title":"math 2 lec 4 part 1 explanation (absolute extrema and lagrange multiplier)","link":"https://youtu.be/MMyilvKlTOk?si=qoJVQjvE-1QL0w90"
+            },
+            {
+                "title":"Math 2 lec 4 part 2 explanation (ordinary differential equations)","link":"https://youtu.be/a0ovQtExcgw?si=566aZ-S9fxQSKhA-"
+            },
+            {
+                "title":"math 2 lec 5 (ODE homogenous and seperable)","link":"https://youtu.be/ttKF-KXVcF0?si=ZpA50BAIZJG706R8"
+            },
+            {
+                "title":"math 2 lec 6 explanation exact, linear, Bernoulli and 2nd constant coefficients","link":"https://youtu.be/uiGHdnLywCg?si=eR01X82lWZV_TLrS"
+            },
+            {
+                "title":"math 2 lec 7 (2nd ODE undetermined coeffiecient, variation of parameters and cauchy euler)","link":"https://youtu.be/3VPjc6-fmsk?si=i0yfJ47kNgAbW0kB"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "title":"Statistics 1",
+        "image":"/photos/stat1.jpg",
+        "description":"Statistics 1 Explanation For the Faculties of Computers, AI and Engineering.",
+        "lectures":[
+            {
+                "title":"Section 1 and 2 solving questions.","link":"https://youtu.be/DvHYG6F5FOs?si=gzLMo-z1vLQtn-fF"
+            },
+            {
+                "title":"Section 3,4","link":"https://youtu.be/96D-Ua18Ujk?si=7-B1RgNZxKhgGjyk"
+            },
+            {
+                "title":"Section 5","link":"https://youtu.be/0IY7yg4tuLk?si=rsZqgii-FWabVrhb"
+            },
+            {
+                "title":"Section 6","link":"https://youtu.be/GGGKsA-d3K8?si=FBIS-XpiovHaYyLr"
+            },
+            {
+                "title":"Section 7","link":"https://youtu.be/ac5xAOAR0q4?si=WYY90-hfuym7F3jl"
+            },
+            {
+                "title":"Section 8","link":"https://youtu.be/ac5xAOAR0q4?si=i-RWoSzTp8VMNn8y"
+            },
+            {
+                "title":"Binomial proof","link":"https://youtu.be/7NT6l92fgo4?si=ZmVjigf_1kK8gCG_"
+            }
+        ]
+    }
+]
