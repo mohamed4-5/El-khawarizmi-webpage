@@ -94,7 +94,7 @@ function Header() {
           </a>
           <button
             onClick={toggleMenu}
-            className="text-2xl text-gray-700 dark:text-white"
+            className={`text-2xl ${darkMode? "text-white":"text-gray-700"} `}
           >
             {menuOpen ? <HiX /> : <HiMenu />}
           </button>
