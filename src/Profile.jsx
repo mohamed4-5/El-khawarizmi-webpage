@@ -14,7 +14,7 @@ function Profile(){
     return(
         <motion.div initial={{opacity:0,y:50}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-50}} transition={{duration:0.5}}>
             <div className="flex flex-col items-center justify-center mt-12 md:mt-20 ">
-                <div className="flex flex-row pl-3 md:pl-6 text:xl md:text-2xl pt-12 md:pt-24 box-border border-b-black border-b-2 w-4/5 pb-7 md:pb-14">
+                <div className={`flex flex-row pl-3 md:pl-6 text:xl md:text-2xl pt-12 md:pt-24 box-border ${darkMode ? "border-b-white" :"border-b-black"} border-b-2 w-4/5 pb-7 md:pb-14`}>
                     <div className="m-2 text-blue-600"><FaUser></FaUser></div>
                      <p className="text-gray-400 m-1 font-poppins ">User Name.</p>
                 </div>
