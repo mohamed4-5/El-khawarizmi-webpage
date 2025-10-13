@@ -25,7 +25,7 @@ function Login(){
         }
     }
     return(
-        <motion.div className={`min-h-screen ${darkMode? "bg-gray-900":"bg-gray-100"}`} initial={{opacity:0,y:50}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-50}} transition={{duration:0.5}}>
+        <motion.div className={`min-h-screen text-black ${darkMode? "bg-gray-900":"bg-gray-100"}`} initial={{opacity:0,y:50}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-50}} transition={{duration:0.5}}>
         <div className="min-h-screen flex flex-col items-center justify-center">
             <form className={`${darkMode? "bg-gray-800":"bg-white"} p-6 rounded shadow md:w-96 min-h-80 w-11/12 flex flex-col items-center justify-center`}onSubmit={Handlesubmit}>
                 <h2 className="text-xl text-blue-400 font-bold mb-4">Login</h2>

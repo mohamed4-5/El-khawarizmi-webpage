@@ -40,17 +40,18 @@ function Home() {
       </div>
 
       {/* ديسكتوب / تابلت */}
+     
       <div className="md:grid grid-cols-2 gap-1 mt-[14%] hidden">
         <div className="flex justify-start items-center flex-wrap gap-4">
           <img
             src="/photos/icon.png"
             alt="icon"
-            className="w-32 sm:w-40 md:w-56 lg:w-[400px]"
+            className="w-32 sm:w-40 md:w-56 lg:w-[350px]"
           />
           <img
             src="/photos/icon2.png"
             alt="icon"
-            className="w-32 sm:w-40 md:w-56 lg:w-[400px]"
+            className="w-32 sm:w-40 md:w-56 lg:w-[250px]"
           />
         </div>
         <div className="pt-20 flex w-full flex-col items-center justify-center">
@@ -60,6 +61,7 @@ function Home() {
           </p>
         </div>
       </div>
+
 
       {/* Teacher Section - ديسكتوب */}
       <div className="md:mt-80 mt-32 hidden md:flex justify-center items-center">
