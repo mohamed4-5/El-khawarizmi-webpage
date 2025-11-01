@@ -19,14 +19,14 @@ A modern, responsive web application for mathematics education, built with React
 src/
 ├── components/          # Reusable UI components
 │   ├── CourseCard.jsx  # Course card component
-│   ├── Courses.js      # Courses listing component
+│   ├── Courses.jsx     # Courses listing component
 │   ├── ErrorBoundary.jsx # Error boundary wrapper
 │   ├── Footer.jsx       # Footer component
 │   ├── header.jsx      # Navigation header
 │   └── Teacher.jsx     # Teacher information component
 │
 ├── contexts/           # React Context providers
-│   ├── CoursesContext.js  # Course state management
+│   ├── CoursesContext.jsx  # Course state management
 │   └── ThemeContext.jsx   # Theme/dark mode management
 │
 ├── pages/              # Page components
@@ -44,12 +44,13 @@ src/
 ├── data/               # Static data files
 │   └── courses.json   # Course data
 │
-├── App.js              # Main app component with routing
-└── index.js            # Application entry point
+├── App.jsx             # Main app component with routing
+└── main.jsx           # Application entry point
 ```
 
 ## 🛠️ Technologies Used
 
+- **Vite 7.1.12** - Fast build tool and dev server
 - **React 19.1.1** - UI library
 - **React Router 7.7.1** - Client-side routing
 - **Tailwind CSS 3.4.17** - Utility-first CSS framework
@@ -72,24 +73,21 @@ npm install
 
 3. Start the development server:
 ```bash
-npm start
+npm run dev
 ```
 
 The app will open at [http://localhost:3000](http://localhost:3000)
 
 ## 🎯 Available Scripts
 
-### `npm start`
-Runs the app in development mode. The page will reload when you make changes.
-
-### `npm test`
-Launches the test runner in interactive watch mode.
+### `npm run dev`
+Runs the app in development mode using Vite. The page will reload automatically when you make changes (HMR - Hot Module Replacement).
 
 ### `npm run build`
 Builds the app for production to the `build` folder. The build is optimized and ready for deployment.
 
-### `npm run eject`
-**Note: This is a one-way operation!** Ejects from Create React App, giving you full control over the configuration.
+### `npm run preview`
+Preview the production build locally before deploying.
 
 ## 🏗️ Architecture
 
@@ -190,4 +188,4 @@ Developed for El-Khawarizmi mathematics education platform.
 
 ---
 
-**Note**: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). For more information about available scripts and advanced configuration, refer to the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Note**: This project uses [Vite](https://vitejs.dev/) for fast development and optimized production builds. For more information, refer to the [Vite documentation](https://vitejs.dev/guide/).
