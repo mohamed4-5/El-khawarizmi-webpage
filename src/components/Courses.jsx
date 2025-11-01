@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { CoursesContext } from '../contexts/CoursesContext';
+import { CoursesContext } from '../contexts/CoursesContext.jsx';
 import CourseCard from './CourseCard';
 
 function Courses(){

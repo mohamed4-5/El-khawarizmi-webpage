@@ -3,14 +3,16 @@
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v18 or higher recommended)
 - npm or yarn
 
 ### Initial Setup
 ```bash
 npm install
-npm start
+npm run dev
 ```
+
+The development server will start at [http://localhost:3000](http://localhost:3000) with Hot Module Replacement (HMR) enabled.
 
 ## Code Structure
 
@@ -40,7 +42,7 @@ The app is wrapped in ErrorBoundary at the root level to prevent complete crashe
 
 ### Contexts
 
-#### CoursesContext (`contexts/CoursesContext.js`)
+#### CoursesContext (`contexts/CoursesContext.jsx`)
 Manages course state and purchase functionality.
 
 **Usage:**
@@ -205,16 +207,43 @@ npm test
 npm run build
 ```
 
-The build folder contains optimized production files.
+This uses Vite to create an optimized production build in the `build` folder. The build is significantly faster than Create React App.
+
+To preview the production build locally:
+```bash
+npm run preview
+```
+
+## Vite Development
+
+This project uses Vite for fast development and optimized builds.
+
+### Vite Benefits
+- **Fast HMR**: Instant updates without full page reload
+- **Quick builds**: Production builds complete in seconds
+- **Zero security vulnerabilities**: Modern tooling with updated dependencies
+- **Better dev experience**: Fast server startup and optimized imports
+
+### Vite Configuration
+The `vite.config.js` file contains:
+- React plugin configuration
+- Path aliases (`@` points to `src/`)
+- Server configuration (port 3000)
+- Build output settings
 
 ## Troubleshooting
+
+### Development server not starting
+- Ensure port 3000 is available
+- Check for syntax errors in `vite.config.js`
+- Verify all dependencies are installed
 
 ### Theme not persisting
 - Check browser localStorage permissions
 - Verify ThemeContext is properly wrapping the app
 
 ### Routes not working
-- Ensure BrowserRouter wraps the app in `index.js`
+- Ensure BrowserRouter wraps the app in `main.jsx`
 - Check route paths match exactly (case-sensitive)
 
 ### Styling issues

@@ -6,7 +6,7 @@ import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Home from './pages/home';
 import CourseInfo from './pages/CourseInfo';
-import { CoursesProvider } from './contexts/CoursesContext';
+import { CoursesProvider } from './contexts/CoursesContext.jsx';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import Footer from './components/Footer';
 

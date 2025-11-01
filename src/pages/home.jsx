@@ -1,5 +1,5 @@
 import Teacher from "../components/Teacher";
-import Courses from "../components/Courses";
+import Courses from "../components/Courses.jsx";
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaUser } from "react-icons/fa";
-import { CoursesContext } from "../contexts/CoursesContext";
+import { CoursesContext } from "../contexts/CoursesContext.jsx";
 import { useContext } from "react";
 import { useTheme } from "../contexts/ThemeContext";
 import CourseCard from "../components/CourseCard";

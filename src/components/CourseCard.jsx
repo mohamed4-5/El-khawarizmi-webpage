@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 import { useContext } from 'react';
-import { CoursesContext } from '../contexts/CoursesContext';
+import { CoursesContext } from '../contexts/CoursesContext.jsx';
 
 function CourseCard({ course, showPurchaseButton = true, actionButtonText = "Know More" }) {
     const {darkMode} = useTheme();
