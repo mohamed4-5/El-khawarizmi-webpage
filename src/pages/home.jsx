@@ -1,6 +1,5 @@
-import Teacher from "./Teacher";
-import { useState, useEffect } from "react";
-import Courses from "./Courses";
+import Teacher from "../components/Teacher";
+import Courses from "../components/Courses";
 
 function Home() {
   return (

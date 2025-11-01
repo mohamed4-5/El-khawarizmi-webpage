@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { HiMenu, HiX, HiOutlineUserCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../contexts/ThemeContext";
 import { BsMoon, BsSun } from "react-icons/bs";
 
 function Header() {
@@ -37,13 +37,13 @@ function Header() {
             >
                 <HiOutlineUserCircle size={70} />
             </Link>
-            <a href="/" className="md:flex hidden items-center">
-            <img
-                className="w-36 h-10 rounded-full cursor-pointer"
-                src="/photos/logo1.png"
-                alt="logo"
-            />
-            </a>
+            <Link to="/" className="md:flex hidden items-center">
+                <img
+                    className="w-36 h-10 rounded-full cursor-pointer"
+                    src="/photos/logo1.png"
+                    alt="El Khawarizmi logo"
+                />
+            </Link>
         </div>
 
         {/* الأزرار الكبيرة */}
@@ -55,6 +55,7 @@ function Header() {
                 ? "bg-yellow-400 text-black"
                 : "bg-gray-200 text-black"
             }`}
+            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
           >
             {darkMode ? <BsSun size={40} /> : <BsMoon size={40} />}
           </button>
@@ -82,19 +83,22 @@ function Header() {
                 ? "bg-yellow-400 text-black"
                 : "bg-gray-200 text-black"
             }`}
+            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
           >
             {darkMode ? <BsSun size={20} /> : <BsMoon size={20} />}
           </button>
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
                 className="w-28 h-8 rounded-full cursor-pointer"
                 src="/photos/logo1.png"
-                alt="logo"
+                alt="El Khawarizmi logo"
             />
-          </a>
+          </Link>
           <button
             onClick={toggleMenu}
-            className={`text-2xl ${darkMode? "text-white":"text-gray-700"} `}
+            className={`text-2xl ${darkMode ? "text-white" : "text-gray-700"}`}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
           >
             {menuOpen ? <HiX /> : <HiMenu />}
           </button>
@@ -103,18 +107,19 @@ function Header() {
 
       {/* المنيو في الموبايل */}
       {menuOpen && (
-        <motion.div
+        <motion.nav
           className="md:hidden bg-sky-600 text-white flex flex-col space-y-2 p-4 rounded-b-2xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
+          aria-label="Mobile navigation menu"
         >
           <Link to="/login" className="text-center py-2 rounded-lg hover:bg-sky-700">Login</Link>
           <Link to="/signup" className="text-center py-2 rounded-lg hover:bg-sky-700">Sign Up</Link>
-          <Link to="/profile" className="flex justify-center py-2 rounded-lg hover:bg-sky-700">
+          <Link to="/profile" className="flex justify-center py-2 rounded-lg hover:bg-sky-700" aria-label="Go to profile">
             <HiOutlineUserCircle size={35} />
           </Link>
-        </motion.div>
+        </motion.nav>
       )}
 
       {/* الخط تحت الهيدر */}
