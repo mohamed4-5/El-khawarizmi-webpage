@@ -1,6 +1,7 @@
 {
-  "name": "graduation-project",
+  "name": "el-khawarizmi",
   "version": "0.1.0",
+  "description": "A modern mathematics learning platform with course management, user authentication, and dark mode support",
   "private": true,
   "dependencies": {
     "@iconify/react": "^6.0.0",
@@ -43,7 +44,14 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.4.17"
+  },
+  "overrides": {
+    "nth-check": "^2.1.1",
+    "resolve-url-loader": {
+      "postcss": "^8.4.31"
+    },
+    "webpack-dev-server": "^4.15.1"
   }
 }
