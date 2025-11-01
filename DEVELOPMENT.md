@@ -243,7 +243,7 @@ The `vite.config.js` file contains:
 - Verify ThemeContext is properly wrapping the app
 
 ### Routes not working
-- Ensure BrowserRouter wraps the app in `index.js`
+- Ensure BrowserRouter wraps the app in `main.jsx`
 - Check route paths match exactly (case-sensitive)
 
 ### Styling issues
